@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box; /*To avoid scrolling and make our webpage fit on any device i.e. webpage width=device width.By default,box-sizing:content-box; */
+}
+html{
+    font-size: 62.5%;
+}
+html,body{      /*by doing this,we can see changes on live server on adding background color without any content*/
+    height: 200%;
+    width: 150%;
+}
+.container{
+    background: indigo;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    position: relative;/*Here it means that it's child elements are gonna positioned relative to it's position while moving them top,bottom,right & left.*/
+}
+.box1, .box2, .box3{
+    height: 20rem;
+    width: 25rem;
+    background: lawngreen;
+}
+.box2{
+    height: 14rem;
+    background: rgb(194, 27, 27);
+
+}
+.box3{
+    background:rgb(11, 167, 115);
+    position: sticky; /*Here it means that this specific element is gonna stick to top and left at 15rem when it hits top and left at 15rem during scrolling the page.*/
+    top: 15rem;
+    left: 15rem;
+
+}
+.box1{
+    
+    position: absolute; /*By this, box1 becomes movable.And now we have access to four more attributes names are:-top,bottom,right,left*/
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%,50%);/*this is used to move the box in x- and y-direction relative to it's current position. */
+    
+}
+.box2{
+    position: fixed;/*By this, this box seems to be floating while scrolling the webpage.And by doing this, we can make it as floating heading.*/
+    top: 0%;
+    right: 0.2%;
+    width: 100%;
+}
+.box2 h2{
+    text-align: center;
+}
+.box1,.box2,.box3 h3{
+    font-size: 5rem;
+}
+

@@ -1,0 +1,16 @@
+h1{
+    margin:50px;
+    background-color: cyan;
+}
+h2{
+    padding: 50px;
+    background-color: darkorange;
+}
+button{
+    padding: 5px; /*here single dimension counts for all edges*/
+    background-color: darkmagenta;
+}
+#b1{
+    margin: 30px 0px 0px 0px  ;
+    padding: 10px 0px ; /*here two dimension counts for all edges.First for top and bottom And second for left and right*/
+}

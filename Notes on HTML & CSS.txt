@@ -1,0 +1,154 @@
+links:
+icon-icons.com
+iconmonster
+w3shools.com
+formatting for the text in html
+pixels.com
+attributes
+<meta name="robots" contents="index,follow" /> : 
+        1.this robot meta tag basically provides instructions to webcrawlers whether to index your webpage or not.
+        2.here follow basically does is: basically the search engine crawlers will follow all the links in that webpage.
+        3.index: crawlers will index your whole webpage
+        4.So finally this entire robots meta tag help crawlers to find out that webpage easily and your webpage probably gonna appear on google faster. 
+Class and Id
+    1.Class:When there are multiple things that falls under same name,then we use class.
+            And this helps us to edit them altogether separately.
+        
+    2.Id: We use "id" with completely unique name when there is something unique on our webpage and we want it to edit later on with CSS and Javascript. 
+    
+<div> : this a non-semantic(meaning less) tag used to group together multiple items.
+      
+      **<div class= "name"> : this can be made in shortcut manner by clicking
+                ".name" in this editor.
+
+Non-semantic tag : <div> </div>, <span> </span>, etc
+semantic tag :  <form> </form>,<header> </header>,<nav> </nav>,<section> </section>
+                 <figure> </figure>,<figcaption> </figcaption>
+
+**DIFFERENCE between "section" and "article" tags is that "section" is 
+        dependent portion but "article" is independent one.
+
+
+HTML ENTITIES : we can search them here by first writting &(ampersand) and 
+        then clicking space bar by holding ctrl key.
+**STRUCTURE OF WEBPAGE(screenshot is available)
+
+**Types of elements on basis of spacing
+1.Inline elements: Elements which take same space as that of contents written in it.
+    Ex: <span>,<input>,<label></label>,<em></em>,<iframe></iframe> etc....  
+2.Block-level elements: Elements which occupy entire horizontal space but vertical spacing is same as that of contents inside it.
+    Ex: heading tags,<p>,etc....(screenshot is available) 
+
+**The HTML Inline Frame element (<iframe>) represents a nested browsing context, embedding another HTML page into the current one. 
+HTML entity for spacing: &nbsp;             
+
+                                 HTML ENDS
+
+
+
+                                CSS
+
+***PRIORITY OF SELECTOR(in order of highest to lowest)
+      
+      Ex: <h1 class="header" id="head">we will dance</h1>
+
+(i)SELECTOR's priority will be maximum whwn we add 
+!important to it; 
+    Ex: Suppose we wanna make tag selector as highest priority, then we need to write:-
+                 h1{
+                        color: coral !important;
+                   }
+(ii)by declaring attribute named style in required tags in html code only.
+     Ex: <h1 style="color: blueviolet;" class="header" id="head">we will dance</h1>
+(iii)id SELECTOR
+     Ex: #head{
+                  color: cyan;
+              }
+(iv)class SELECTOR
+     Ex: .header{
+                  color: cornflowerblue;
+                }
+(v)element SELECTOR
+     Ex:     h1{
+                  color: coral;
+               }
+
+*****SPECIFICITY(id,class,element)
+Ex: (0,0,1)-For element
+    (0,1,0)-For class
+    (1,0,0)-For id
+    (0,1,1)-For class & element
+        Ex: tag_name.class_name  or  .class_name  tag_name
+    (1,0,1)-For id and element
+        Ex: tag_name#id  or  #id  tag_name
+     and so on...
+    
+*MARGIN AND PADDING
+Margin:It adds space outside the element.
+Padding:It adds space inside the element.
+
+*BOX MODEL: Padding,Margin,Border and element itself bunched together to form Box Model.
+                
+                
+          x-------    "rem" & "em" & "px"      ----------x
+***Inheritance of property due to unit "em"
+font-size: 1em; /*this is default size of html text i.e. equal to 16px*/
+/* By default, text size is 16px or 1em:
+    html{
+        font-size: 16px;
+    }
+*/
+     Ex: <section class="text-sec">
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloremque laborious	
+			</p>
+			<div>
+				<p>Lorem ipsum dolor sit amet consectetur </p>
+			</div>
+		</section>
+Here in above html code, if we apply css like:
+
+.text-sec{
+    font-size: 1.5em; /*here text size becomes 16*1.5=24px*/
+}
+.text-sec div{
+    font-size: 1.5em;/*here text size becomes 16*1.5*1.5=36px*/
+    margin-top: 2em; /*here size of top margin becomes 16*1.5*1.5*2=72px*/
+}
+Since size is in "em" then size of child element is product of it's parent element and given value.
+
+**But if we use unit "rem" in place of "em", then it's only gonna multiply it's value to root element i.e.  to <html> default size 
+*CSS Code be like 
+.text-sec{
+    font-size: 1.5rem; /*here text size becomes 16*1.5=24px*/
+}
+.text-sec div{
+    font-size: 1.5rem;/*here also,text size becomes 16*1.5=24px*/
+    margin-top: 2rem; /*here size of top margin becomes 16*2=32px*/
+}
+***We can set <html> default text size as per our requirement and for easy calculation.
+html{
+    font-size: 62.5%; /*it is equal to 10px*/
+}
+**If we have used "px", then we can't modify text-size from browser, manually.
+**ADVANTAGE OF USING "rem" IN PLACE OF "em" AND "px" IS: WE CAN EASILY DO CALCULATIONS FOR TEXT-SIZE REQUIRED AND MAKE OUR WEBSITE RESPONSIVE i.e.WE CAN ADJUST THE TEXT-SIZE MANUALLY FROM BROWSER itself.
+
+**INLINE and BLOCK elements
+1.INLINE elements: 
+        (i)allow other elements to add next to them.
+        (ii) Consider only left and right  margin and padding.
+        (iii)they don't consider attributes like 'height' and 'width'.
+      **But we can make INLINE elements behave as BLOCK elements by adding  a attribute:- display:block; to it,then we can perform all operations of BLOCK elements.
+
+
+        ****POSITIONING****
+
+1. position:static(By default) :-by this, view of different boxes remain same.
+2. position:absolute :- by this,box becomes movable.
+3.transform: translate(x,y);This is used to move the box in x- and y-direction relative to it's current position.Positive x means moving towards right, Positive y means moving towards bottom.
+4.position: relative; It has two meaning:-
+    (i)If it is used in parent element:It means that it's child elements are gonna positioned relative to their parent position while moving them top,bottom,right & left.
+    (ii)If it is used in child element of class:It means that this specific element is gonna positioned relative to it's current position while moving it top,bottom,right & left.
+5.position: fixed; By adding this to any element, that very element seems to be floating while scrolling the webpage i.e the position of the element is fixed.
+6.position: sticky; By adding this to any element,that very element will stick to the attribute provided even after scrolling.
+

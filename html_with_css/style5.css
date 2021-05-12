@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box; /*To avoid scrolling and make our webpage fit on any device i.e. webpage width=device width.By default,box-sizing:content-box; */
+}
+html{
+    font-size: 62.5%;
+}
+button{
+    margin: 10rem;
+    padding: 2rem 4rem;
+    background: rgb(9, 9, 138) ;
+    border: 0.3rem solid rgb(9, 9, 138) ;
+    color: white;
+    font-size: 2.4rem;
+    border-radius: 5%; /*for making the button round,make it more than "50%"*/
+    cursor: pointer;
+}
+button:hover{
+    color: brown;
+    background: red;
+}
+h1{
+    height: 5rem;
+    background: yellowgreen;
+    text-align: center;
+}
+p{
+    background: tomato;
+    width: 10rem;
+    height: 2rem;
+}
+a{
+    background: cyan;
+    display: block; /*this is for making INLINE <a> tag as BLOCK element so that we can apply below attributes.*/
+    text-align: center;
+    height: 3rem;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+.links a{
+    background: green;
+    font-size: 2rem;
+    color: honeydew;
+    display: inline-block; /*due to this, it consider top and bottom margin and padding as well with being inline also.*/
+    height: 20rem;
+    width: 20rem;
+    margin: 2rem;
+    padding: 5rem;
+}

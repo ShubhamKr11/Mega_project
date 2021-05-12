@@ -1,0 +1,59 @@
+/* this selector formats contents of tag */
+h1{
+    color: red;
+}
+/* this selector formats contents of class */
+.random h3{
+    color: green ;
+}
+/* this selector formats contents of tag just below given class */
+.title +h4{
+    color: blue;
+}
+/* this selector formats entire content */
+*{
+    font-style: italic;
+}
+.my-list +ul{
+    list-style: none;
+}
+/* this selector formats contents of tag just below given tag */
+h1 +p{
+    color:chocolate;
+}
+/* 
+ul >li{
+    color: darkgray;
+}
+*/
+ul li{
+    color: darkgray;
+}
+/* There are three or more ways for formatting list's contents with help of class.Given below are three ways: */
+/* FIRST way
+.last{
+    color: darkmagenta;
+  SECOND way
+.last >li{
+    color: darkmagenta;
+}
+} 
+*/
+/* THIRD way */
+.last li{
+    color: darkmagenta;
+}
+.last li a{
+    color:black ;
+}
+/* This formats unordered_list>link's contents i.e. all links are formatted under unordered list */
+ul a{
+    color: lightseagreen;
+}
+/* This formats unordered_list>li>link's contents i.e. It is somewhat more specific */
+ul li a{
+    font-style: normal;
+    color: lightcoral;
+}
+
+

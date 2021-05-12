@@ -1,0 +1,32 @@
+/* This selector formats nth class named links if there are more than one class named links.For ex:Here 2nd class was formated */
+.links:nth-child(2){
+    color: blueviolet;
+}
+/* This selector formats nth li contents of list in class named link.For ex:Here 1st li term was formatted */
+.links li:nth-child(1){
+    color: crimson;
+}
+
+
+/* Priority of selector */
+h1{
+    color: coral;
+}
+.header{
+    color: cornflowerblue;
+}
+/* #head{ 
+    color: cyan;
+}*/
+.title{
+    color: rgb(143, 51, 189);
+}
+h1.title{
+    color: rgb(182, 21, 21);
+}
+h1#head{
+    color:chartreuse;
+}
+h2#head{
+    color: rgb(219, 21, 31);
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Shubham | engg</title>
+		<meta name="description" content="I am a CSE student" />
+		<meta charset="utf-8" />
+		<meta name="robots" contents="index,follow" />
+		<link
+			rel="icon"
+			href="image/launch-rocket-space-spacecraft-spaceship-starship-startup_106797.ico"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width,
+        initial-scale=1"
+		/>
+	</head>
+	<body>
+		<h1>Form</h1>
+		<form>
+			<h3>Choose options</h3>
+			<label for="mac"> <b> For macbook </b></label>
+			<h4></h4>
+			<input type="radio" name="products" value="macbook2018" id="mac" />
+			<h4>For iphone</h4>
+			<input type="radio" name="products" value="iphone12" />
+			<h4>For android</h4>
+			<input type="radio" name="products" value="android10" />
+			<h4>For amazon</h4>
+			<input type="radio" name="products" value="amazon2020" />
+			<h2></h2>
+			
+
+			<hr />
+			<hr />
+			<h2>Payment Information</h2>
+			<label for="Ucard">*Card Type:</label>
+			<select required name="card_type" id="Ucard">
+				<option value="">Select card type</option>
+				<option value="visa">Visa card</option>
+				<option value="master_card">Master Card</option>
+				<option value="rupay">Rupay</option>
+			</select>
+			<br /><br />
+			<label for="UcardNo">*Card No.</label>
+			<input required type="number" name="card_number" id="UcardNo" />
+			<br /><br />
+			<label>*Expiry Date</label>
+            <input required type="date" name="expiry_date" id="UcardExp" />
+            <br><br>
+            <label for="Ucvv">*CVV</label>
+            <input required  type="password" name="cvv" id="Ucvv">
+			<br /><br/>
+			<hr />
+			<hr />
+			<h2>Card used till now</h2>
+			<label for="Uvisa">Visa Card</label>
+			<input type="checkbox" name="Vcard" id="Uvisa" />
+			<label for="Umaster">Master Card</label>
+			<input type="checkbox" name="Mcard" id="Umaster" />
+			<label for="Urupay">Rupay Card</label>
+            <input type="checkbox" name="Rcard" id="Urupay" />
+            <br><br><br>
+            <button type="submit"><b>Submit</b></button>
+		</form>
+	</body>
+</html>

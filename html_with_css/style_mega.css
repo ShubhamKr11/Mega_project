@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box; /*To avoid scrolling and make our webpage fit on any device i.e. webpage width=device width.By default,box-sizing:content-box; */
+}
+html{
+    font-size: 62.5%;
+}
+html,body{      /*by doing this,we can see changes on live server on adding background color without any content*/
+    height: 200%;
+    width: auto;
+}
+main{
+    background-color: aqua;
+}
+header,nav{
+    text-align: center;
+    font-size: 3rem;
+}
+header{
+    color: rgb(8, 8, 126);
+}
+header{
+    margin-bottom: 2rem;
+}
+nav{
+    width: fit-content;
+    background: rgb(197, 233, 68);
+    padding: 5rem 1rem;
+    margin-left: 35%;
+}
+.course h2{
+    font-size: 3rem;
+    background-color: rgb(167, 231, 83);
+    width: fit-content;
+    color: rgb(167, 23, 71);
+    margin-top: 15rem;
+    padding: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.review h2{
+    font-size: 3rem;
+    background-color: rgb(167, 231, 83);
+    width: fit-content;
+    color: rgb(167, 23, 71);
+    margin-top: 15rem;
+    padding: 2rem;
+    margin-bottom: 0.5rem;
+}
+.material h2{
+    font-size: 3rem;
+    background-color: rgb(167, 231, 83);
+    width: fit-content;
+    color: rgb(167, 23, 71);
+    margin-top: 15rem;
+    padding: 2rem;
+    margin-bottom: 0.5rem;
+}
+.founder h2{
+    font-size: 5rem;
+    font-style: italic;
+    /* background-color: rgb(167, 231, 83); */
+    width: fit-content;
+    color: rgb(224, 26, 26);
+    margin-top: 15rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.course video{
+    width: 33%;
+    height: 25rem;
+}
+.review iframe{
+    width: 33%;
+    height: 25rem;
+}
+.material img{
+    width: 33%;
+    height: 25rem;
+    
+}
+.founder{
+    margin-left: 35%;
+    background-color: rgb(131, 131, 235);
+    width: fit-content;
+    margin-right: 35%;
+    padding-left: 3rem;
+    block-size: 60rem;
+
+    
+}
+.founder img{
+    width: 40rem;
+    
+}
+.founder h3,a{
+    font-size: 2rem;
+    font-style: oblique;
+}
+.founder h4{
+    font-size: 1.5rem;
+    font-style: oblique;
+}
+footer{
+    margin-top: 15rem;
+    margin-left: 55rem;
+}
